@@ -568,7 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3c88f3d09e7c342b4f69d8d5dfc331, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadString: Win
+  loadString: Landsby (Lobby)
 --- !u!114 &823065311
 MonoBehaviour:
   m_ObjectHideFlags: 0
