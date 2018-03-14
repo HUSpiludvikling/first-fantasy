@@ -6,11 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Main Menu.unity
+    path: Assets/Scenes/Main Menu.unity
     guid: 5188de7b6c785ed4f8f9f79d51dff798
   - enabled: 1
-    path: Assets/Win.unity
+    path: Assets/Scenes/Win.unity
     guid: b7f911cf4ef98a241bf3380fd4d6b30f
   - enabled: 1
-    path: Assets/Landsby (Lobby).unity
+    path: Assets/Scenes/Landsby (Lobby).unity
     guid: 14cfb02b98a43ce4a8fd8dd719ab297c
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: df44c474724d6fb469f5489d7dba8d0f
+  - enabled: 1
+    path: Assets/Scenes/Battle.unity
+    guid: 59fad6ab318e8ec4c95513b83595a86a
