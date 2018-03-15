@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerStats : MonoBehaviour {
-    
+    public float health = 100;
     void Awake ()
     {
         GameObject.DontDestroyOnLoad(gameObject);
@@ -17,4 +17,14 @@ public class PlayerStats : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Debug.Log("du er død");
+        }
+    }
 }
