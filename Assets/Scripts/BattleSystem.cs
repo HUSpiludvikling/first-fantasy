@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BattleSystem : MonoBehaviour {
+public class BattleSystem : MonoBehaviour
+{
     public enum Turn
     {
         PlayerTurn, EnemyTurn
@@ -22,13 +23,15 @@ public class BattleSystem : MonoBehaviour {
         enemy = e;
     }
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         if (turn == Turn.EnemyTurn)
         {
@@ -41,15 +44,19 @@ public class BattleSystem : MonoBehaviour {
             playerUI.SetActive(true);
         }
 
-	}
+    }
 
     private void ChanceTurn()
     {
-            if (turn == EnemyTurn)
-            {
-                (turn == PlayerTurn);
-            }
-        } 
-         
+        if (turn == Turn.EnemyTurn)
+        {
+            turn = Turn.PlayerTurn;
+        }
+
+        else
+        {
+            turn = Turn.EnemyTurn;
+        }
     }
 }
+
