@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAttack {
+public class EnemyAttack
+{
 
-    public virtual void TakeAction(PlayerStats ps, float amount)
-    {
-        ps.TakeDamage(amount);
-    }
+    //public virtual void TakeAction(PlayerStats ps, AttackStats attackStats)
+    //{
+
+    //    ps.TakeDamage(amount);
+    //}
 }

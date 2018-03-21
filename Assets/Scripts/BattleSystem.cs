@@ -18,6 +18,7 @@ public class BattleSystem : MonoBehaviour
 
 
 
+
     public void StartBattle(Enemy e)
     {
         enemy = e;
@@ -36,7 +37,7 @@ public class BattleSystem : MonoBehaviour
         if (turn == Turn.EnemyTurn)
         {
             playerUI.SetActive(false);
-            enemy.attack.TakeAction(player, enemy.Damage);
+            PerformEnemyAttack(GetRandomEnemyAttack(enemy), player);
             ChanceTurn();
         }
         else if (turn == Turn.PlayerTurn)
@@ -44,6 +45,25 @@ public class BattleSystem : MonoBehaviour
             playerUI.SetActive(true);
         }
 
+    }
+
+    public AttackStats GetRandomEnemyAttack(Enemy enemy)
+    {
+        return enemy.attacks[UnityEngine.Random.Range(0, enemy.attacks.Length)];
+    }
+
+    public void PerformEnemyAttack(AttackStats attackStats, PlayerStats player)
+    {
+        switch (attackStats.attackType)
+        {
+            case AttackType.Single:
+                player.TakeDamage(attackStats.damage);
+                break;
+            case AttackType.AOE:
+                break;
+            case AttackType.Dot:
+                break;
+        }
     }
 
     private void ChanceTurn()
@@ -59,4 +79,3 @@ public class BattleSystem : MonoBehaviour
         }
     }
 }
-

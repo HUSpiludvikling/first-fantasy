@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy {
-
+[CreateAssetMenu(fileName = "Enemy", menuName = "Enemy/Enemy", order = 2)]
+public class Enemy :ScriptableObject {
+    
     public float Health;
     public float Damage;
 
-    public EnemyAttack attack;
+    public AttackStats[] attacks;
 
 }
