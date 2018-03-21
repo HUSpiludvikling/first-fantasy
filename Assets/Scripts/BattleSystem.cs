@@ -15,19 +15,20 @@ public class BattleSystem : MonoBehaviour
     public Turn turn;
     public GameObject playerUI;
     public PlayerStats player;
+    public Enemy[] enemyList;
 
 
 
-
-    public void StartBattle(Enemy e)
+    public void StartBattle()
     {
-        enemy = e;
+        enemy = GetRandomEnemy();
     }
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        StartBattle();
     }
 
     // Update is called once per frame
@@ -45,6 +46,11 @@ public class BattleSystem : MonoBehaviour
             playerUI.SetActive(true);
         }
 
+    }
+
+    public Enemy GetRandomEnemy()
+    {
+        return enemyList[UnityEngine.Random.Range(0, enemyList.Length)];
     }
 
     public AttackStats GetRandomEnemyAttack(Enemy enemy)

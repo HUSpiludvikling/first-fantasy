@@ -9,10 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1755e6f79d5a74db2a4d13163f8c7c, type: 3}
-  m_Name: Enemy
+  m_Name: Nazi
   m_EditorClassIdentifier: 
   Health: 1000
   Damage: 5000
   attacks:
-  - {fileID: 11400000, guid: f167c4461932c8d4ca76f816284e2e20, type: 2}
-  - {fileID: 11400000, guid: f167c4461932c8d4ca76f816284e2e20, type: 2}
+  - {fileID: 11400000, guid: 01979ffa439a19d4083061ba3a9a248e, type: 2}
+  - {fileID: 11400000, guid: 3df0c4ecf2ed52749a8ec1c961261dcd, type: 2}
