@@ -72,7 +72,7 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    private void ChanceTurn()
+    public void ChanceTurn()
     {
         if (turn == Turn.EnemyTurn)
         {
