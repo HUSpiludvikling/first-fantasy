@@ -22,6 +22,7 @@ public class BattleSystem : MonoBehaviour
     public void StartBattle()
     {
         enemy = GetRandomEnemy();
+        
     }
 
     // Use this for initialization

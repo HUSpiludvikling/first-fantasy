@@ -4,7 +4,8 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Enemy", menuName = "Enemy/Enemy", order = 2)]
 public class Enemy :ScriptableObject {
-    
+
+    public string Name;
     public float Health;
     public float Damage;
 
