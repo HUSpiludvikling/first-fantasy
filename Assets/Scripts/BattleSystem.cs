@@ -26,7 +26,7 @@ public class BattleSystem : MonoBehaviour
     }
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         StartBattle();

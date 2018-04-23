@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1755e6f79d5a74db2a4d13163f8c7c, type: 3}
   m_Name: Holstebro
   m_EditorClassIdentifier: 
+  Name: Holstebro
   Health: 100
   Damage: -1
   attacks:
