@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b1755e6f79d5a74db2a4d13163f8c7c, type: 3}
   m_Name: Randers
   m_EditorClassIdentifier: 
+  Name: Randers
   Health: 1.1111112e+9
   Damage: 1.1111112e+9
   attacks:
