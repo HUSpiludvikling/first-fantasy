@@ -20,6 +20,7 @@ public class HealthEnemy : MonoBehaviour {
         if (life<=0)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Points>().GetScore(5);
+            GameObject.FindGameObjectWithTag("BattleManager").GetComponent<Timer>().StartTimer("loadstring");
             Destroy(gameObject);
         }
     }
