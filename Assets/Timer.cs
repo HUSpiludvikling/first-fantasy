@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour {
     public float Tid;
     public string loadString;
-	// Use this for initialization
+	// Use this for initializationhh
 	void Start ()
     {
         
