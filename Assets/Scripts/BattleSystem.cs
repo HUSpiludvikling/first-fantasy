@@ -22,7 +22,16 @@ public class BattleSystem : MonoBehaviour
     public void StartBattle()
     {
         enemy = GetRandomEnemy();
-        
+        enemy.Health = enemy.MaxHealth;
+
+        GameObject Txt = GameObject.FindGameObjectWithTag("RewardTexts");
+        enemy.RewardText = Txt;
+
+        GameObject Panel = GameObject.FindGameObjectWithTag("RewardPanel");
+        enemy.RewardPanel = Panel;
+        Panel.SetActive(false);
+
+        enemy.points = player.gameObject;
     }
 
     // Use this for initialization
@@ -47,6 +56,16 @@ public class BattleSystem : MonoBehaviour
             playerUI.SetActive(true);
         }
 
+    }
+
+    public void PerformPlayerAttack()
+    {
+        enemy.GetRekt(player.Swords.damage);
+    }
+
+    public void EarnReward(int reward)
+    {
+        player.GetComponent<Points>().GetScore(reward);
     }
 
     public Enemy GetRandomEnemy()

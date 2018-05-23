@@ -14,6 +14,7 @@ MonoBehaviour:
   Name: Holstebro
   Health: 100
   Damage: -1
+  Reward: 3
   attacks:
   - {fileID: 11400000, guid: 6efcf465a5fd791428c161a8508e1e8f, type: 2}
   - {fileID: 11400000, guid: f167c4461932c8d4ca76f816284e2e20, type: 2}

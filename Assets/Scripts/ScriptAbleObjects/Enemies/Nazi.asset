@@ -14,6 +14,7 @@ MonoBehaviour:
   Name: Nazi
   Health: 1000
   Damage: 5000
+  Reward: 1
   attacks:
   - {fileID: 11400000, guid: 01979ffa439a19d4083061ba3a9a248e, type: 2}
   - {fileID: 11400000, guid: 3df0c4ecf2ed52749a8ec1c961261dcd, type: 2}

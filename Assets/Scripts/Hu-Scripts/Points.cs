@@ -7,7 +7,7 @@ public class Points : MonoBehaviour {
 
     public Text Text;
 
-    private int score = 0;
+    public int score = 0;
 
     private void Awake()
     {
@@ -17,6 +17,5 @@ public class Points : MonoBehaviour {
     public void GetScore(int input)
     {
         score += input;
-        Text.text = "Points: " + score.ToString();
     }
 }

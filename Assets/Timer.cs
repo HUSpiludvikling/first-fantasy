@@ -16,27 +16,9 @@ public class Timer : MonoBehaviour {
 
     public void StartTimer()
     {
-        StartCoroutine(Delay(Tid));
+        StartCoroutine(Delay(5f));
     }
-    /// <summary>
-    /// Starter timeren med en ny scene
-    /// </summary>
-    /// <param name="loadstring">Den nye scene</param>
-    public void StartTimer(string loadstring)
-    {
-        loadString = loadstring;
-        StartTimer();
-    }
-    /// <summary>
-    /// Starter timeren med en ny tid.
-    /// </summary>
-    /// <param name="tid">Den nye tid i sekunder.</param>
-    public void StartTimer(float tid)
-    {
-        Tid = tid;
-        StartTimer();
-    }
-    // Update is called once per frame
+
     void Update () {
        
 	}
@@ -53,6 +35,6 @@ public class Timer : MonoBehaviour {
 
     private void SkiftScene()
     {
-        SceneManager.LoadScene(loadString);
+        SceneManager.LoadScene("Landsby (Lobby)");
     }
 }
