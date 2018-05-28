@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82797b3492f60d5479d84c4e571f48cc, type: 3}
   m_Name: "Bl\xE5"
   m_EditorClassIdentifier: 
-  attackName: Sword Of The Water
+  attackName: Officer's sword
   attackType: 0
   damage: 60
