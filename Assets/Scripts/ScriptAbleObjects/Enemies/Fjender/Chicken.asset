@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Name: Chicken
   m_EditorClassIdentifier: 
   Name: 
+  MaxHealth: 60
   Health: 60
-  Damage: 0
+  Damage: 100
+  Reward: 25
   attacks:
   - {fileID: 0}
+  RewardPanel: {fileID: 0}
+  RewardText: {fileID: 0}
+  points: {fileID: 0}

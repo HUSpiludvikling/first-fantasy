@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Name: Randers
   m_EditorClassIdentifier: 
   Name: Randers
+  MaxHealth: 1000
   Health: 1.1111112e+9
   Damage: 1.1111112e+9
   Reward: 4
   attacks:
   - {fileID: 11400000, guid: f1fd6a228e263704a906161c4fa90a80, type: 2}
   - {fileID: 11400000, guid: 01979ffa439a19d4083061ba3a9a248e, type: 2}
+  RewardPanel: {fileID: 0}
+  RewardText: {fileID: 0}
+  points: {fileID: 0}

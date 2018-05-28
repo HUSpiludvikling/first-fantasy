@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Name: Nazi
   m_EditorClassIdentifier: 
   Name: Nazi
-  Health: 1000
+  MaxHealth: 0
+  Health: 0
   Damage: 5000
-  Reward: 1
+  Reward: 1000
   attacks:
   - {fileID: 11400000, guid: 01979ffa439a19d4083061ba3a9a248e, type: 2}
   - {fileID: 11400000, guid: 3df0c4ecf2ed52749a8ec1c961261dcd, type: 2}
+  RewardPanel: {fileID: 0}
+  RewardText: {fileID: 0}
+  points: {fileID: 0}
