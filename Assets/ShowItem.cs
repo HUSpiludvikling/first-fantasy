@@ -11,6 +11,8 @@ public class ShowItem : MonoBehaviour, IPointerClickHandler {
 
     Points points;
     Inventory inventory;
+    PlayerStats stats;
+
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -20,15 +22,20 @@ public class ShowItem : MonoBehaviour, IPointerClickHandler {
         {
             inventory.list.Add(shownitem);
             points.score -= shownitem.Koster;
+            if (shownitem.attackstats != null)
+            {
+                stats.Swords = shownitem.attackstats;
+            }
         }
+        
     }
 
     // Use this for initialization
     void Start () {
         itemsprite = GetComponent<Image>();
         points = GameObject.FindGameObjectWithTag("Player").GetComponent<Points>();
-
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         itemsprite.sprite = shownitem.sprite;
 	}
 	

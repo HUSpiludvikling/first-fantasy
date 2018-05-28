@@ -11,5 +11,6 @@ public class Item : ScriptableObject
     public float Damage;
     public int Koster;
     public Sprite sprite;
+    public AttackStats attackstats;
 
 }
