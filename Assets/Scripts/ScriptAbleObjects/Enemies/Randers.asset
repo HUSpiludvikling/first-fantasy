@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: Randers
   m_EditorClassIdentifier: 
   Name: Randers
-  MaxHealth: 1000
-  Health: 1.1111112e+9
+  MaxHealth: 0
+  Health: -15
   Damage: 1.1111112e+9
   Reward: 4
   attacks:
