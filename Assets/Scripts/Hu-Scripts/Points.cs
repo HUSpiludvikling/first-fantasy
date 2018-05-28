@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +8,7 @@ public class Points : MonoBehaviour {
 
     public Text Text;
 
-    private int score = 0;
+    public int score = 0;
 
     private void Awake()
     {
@@ -17,6 +18,14 @@ public class Points : MonoBehaviour {
     public void GetScore(int input)
     {
         score += input;
-        Text.text = "Points: " + score.ToString();
+    }
+
+    internal void Update()
+    {
+        if(Text != null)
+        {
+            Text.text = score.ToString();
+        }
+        
     }
 }

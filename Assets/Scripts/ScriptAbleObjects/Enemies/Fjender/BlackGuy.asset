@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Name: BlackGuy
   m_EditorClassIdentifier: 
   Name: 
+  MaxHealth: 175
   Health: 175
-  Damage: 0
+  Damage: 10
+  Reward: 20
   attacks: []
+  RewardPanel: {fileID: 0}
+  RewardText: {fileID: 0}
+  points: {fileID: 0}

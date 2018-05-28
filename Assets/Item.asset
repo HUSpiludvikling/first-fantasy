@@ -8,15 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b1755e6f79d5a74db2a4d13163f8c7c, type: 3}
-  m_Name: Spider
+  m_Script: {fileID: 11500000, guid: 4b74a297928b9af429bcd2319199a7c1, type: 3}
+  m_Name: Item
   m_EditorClassIdentifier: 
-  Name: 
-  MaxHealth: 120
-  Health: 120
-  Damage: 30
-  Reward: 50
-  attacks: []
-  RewardPanel: {fileID: 0}
-  RewardText: {fileID: 0}
-  points: {fileID: 0}
+  Name: Memes
+  Damage: 100
+  Koster: 100
+  sprite: {fileID: 21300000, guid: d93bd76a02a09a146932eaf25a4591d1, type: 3}

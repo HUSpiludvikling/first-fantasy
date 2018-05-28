@@ -18,6 +18,6 @@ public class BattleDisplayEnemy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        HealthText.text = enemy.Health.ToString("0");
+        HealthText.text = enemy.MaxHealth.ToString("0");
 	}
 }

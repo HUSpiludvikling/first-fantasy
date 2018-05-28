@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - BattleManager
+  - RewardPanel
+  - RewardTexts
+  - CombatInfo
   layers:
   - Default
   - TransparentFX
