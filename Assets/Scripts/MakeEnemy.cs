@@ -5,8 +5,8 @@ using UnityEditor;
 
 
 public class MakeEnemy : MonoBehaviour {
-
-	[MenuItem("Assets/Create/Enemy")]
+#if UNITY_EDITOR
+    [MenuItem("Assets/Create/Enemy")]
 	public static void Create () {
         Enemy asset = ScriptableObject.CreateInstance<Enemy>();
 
@@ -17,6 +17,6 @@ public class MakeEnemy : MonoBehaviour {
 
         Selection.activeObject = asset;
 	}
-	
+#endif
 
 }
